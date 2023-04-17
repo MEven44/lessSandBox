@@ -1,0 +1,119 @@
+//
+//  ALL DEVICES
+//  _____________________________________________
+& when (@media-common = true) {
+    .endertech {
+        .mfp-bg {
+            background: @color-white;
+            opacity: 0.9;
+        }
+
+        .mfp-preloader {
+            color: @theme__color__primary;
+
+            a {
+                color: @theme__color__primary;
+
+                &:hover {
+                    color: @theme__color__primary-alt;
+                }
+            }
+        }
+
+        .mfp-close {
+            color: @theme__color__primary;
+        }
+
+        .mfp-arrow {
+            &::before {
+                opacity: 1;
+            }
+        }
+
+        .mfp-arrow-left {
+            &::after {}
+
+            &::before {
+                border-right-color: @theme__color__primary;
+            }
+        }
+
+        .mfp-arrow-right {
+            &::after {}
+
+            &::before {
+                border-left-color: @theme__color__primary;
+            }
+        }
+
+        .mfp-close-btn-in, .mfp-image-holder, .mfp-iframe-holder {
+            .mfp-close {
+                color: @theme__color__primary;
+            }
+        }
+
+        .mfp-image-holder, .mfp-iframe-holder {
+            .mfp-close {
+                width: auto;
+                min-width: 32px;
+                height: 32px;
+                font-weight: @font-weight__ultralight;
+                line-height: 32px;
+                border: 1px solid @theme__color__primary;
+                border-radius: 30px;
+            }
+        }
+
+        .mfp-title, .mfp-counter {
+            color: @theme__color__primary;
+            font-weight: @font-weight__heavier;
+        }
+
+        .mfp-iframe-scaler {
+            iframe {}
+        }
+
+        .mfp-figure {
+            &::after {
+                background: @color-white-smoke;
+                box-shadow: 0 0 8px fade(@color-black, 25);
+            }
+
+            small {
+                color: @theme__color__primary;
+            }
+        }
+    }
+}
+
+
+
+
+//
+//  MOBILE
+//  _____________________________________________
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__xs) {}
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__s) {}
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {}
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__l) {}
+
+
+
+
+//
+//  DESKTOP
+//  _____________________________________________
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__s) {}
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {}
+
+@media only screen and (min-width: @screen__m) and (max-width: (@screen__l - 1)) {}
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__l) {}
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__xl) {}
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__xl) {}

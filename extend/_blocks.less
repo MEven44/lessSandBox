@@ -1,0 +1,103 @@
+//
+//  ALL DEVICES
+//  _____________________________________________
+& when (@media-common = true) {
+    .block {
+        // Newsletter Block
+        &.newsletter {
+            .page-footer & {
+                .title {
+                    text-align: center;
+                }
+
+                .field {
+                    &.newsletter {}
+                }
+
+                input {
+                    border-color: @color-dark-blue;
+                    border-top-left-radius: @button__border-radius;
+                    border-bottom-left-radius: @button__border-radius;
+                }
+
+                .action {
+                    &.subscribe {
+                        text-transform: uppercase;
+                        border-width: 1px;
+                    }
+                }
+
+                // Desktop & Tablet
+                @media only screen and (min-width: @screen__m) {
+                    input {
+                        min-width: 350px;
+                    }
+
+                    .form.subscribe {
+                        > .field, > .actions {
+                            float: none;
+                        }
+                    }
+
+                    .field {
+                        &.newsletter {
+                            max-width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Discount Forms
+    .paypal-review-discount, .cart-discount {
+        .field {
+            .control {
+                input {
+                    &[type="text"], &[type="password"], &[type="url"], &[type="tel"], &[type="search"], &[type="number"], &[type="datetime"], &[type="email"] {
+                        border-top-left-radius: @button__border-radius;
+                        border-bottom-left-radius: @button__border-radius;
+                    }
+                }
+            }
+        }
+
+        .actions-toolbar {
+            .action {
+                &.primary, &.cancel {}
+            }
+        }
+    }
+}
+
+
+
+
+//
+//  MOBILE
+//  _____________________________________________
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__xs) {}
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__s) {}
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {}
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__l) {}
+
+
+
+
+//
+//  DESKTOP
+//  _____________________________________________
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__s) {}
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {}
+
+@media only screen and (min-width: @screen__m) and (max-width: (@screen__l - 1)) {}
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__l) {}
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__xl) {}
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__xl) {}

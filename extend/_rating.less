@@ -1,0 +1,53 @@
+//
+//  ALL DEVICES
+//  _____________________________________________
+& when (@media-common = true) {
+    .rating-summary {
+        .rating-result {
+            &:before, > span:before {
+                height: 16px;
+                font-size: 16px;
+                line-height: 16px;
+                letter-spacing: 4px;
+            }
+
+            > span {
+                &:before {
+                    //color: @color-blue;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+//
+//  MOBILE
+//  _____________________________________________
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__xs) {}
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__s) {}
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {}
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__l) {}
+
+
+
+
+//
+//  DESKTOP
+//  _____________________________________________
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__s) {}
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {}
+
+@media only screen and (min-width: @screen__m) and (max-width: (@screen__l - 1)) {}
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__l) {}
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__xl) {}
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__xl) {}

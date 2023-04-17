@@ -1,0 +1,1293 @@
+//
+//  ALL DEVICES
+//  _____________________________________________
+& when (@media-common = true) {
+    html {
+        scroll-behavior: smooth;
+    }
+
+    .ipulser {
+        &.cms-how-it-works,
+        &.cms-pain-survey {
+            .breadcrumbs {
+                display: none;
+            }
+        }
+
+        &.cms-how-it-works,
+        &.cms-pain-survey,
+        &.cms-home,
+        &.quiz,
+        &.amblog-index-post,
+        &.page-layout-fullwidth-custom {
+            .page-main {
+                > .page-title-wrapper {
+                    h1.page-title {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        &.cms-dr-prager-advises {
+            .columns {
+                .column.main {
+                    padding-bottom: 0;
+                }
+            }
+        }
+
+        .page-wrapper {
+            > .breadcrumbs {
+                display: none;
+            }
+        }
+
+        .home-testimonials {
+            rs-module-wrap {
+                &#rev_slider_15_1_wrapper,
+                &#rev_slider_14_1_wrapper {
+                    .uranus.tparrows {
+                        &:before {
+                            color: @color-blue-slide-arrow;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .background-lightblue {
+        background-color: @color-blue-light;
+        color: @color-white;
+    }
+
+    .background-lighterblue {
+        background-color: @color-blue-lighter;
+    }
+
+    .background-white-dark {
+        background-color: rgba(160, 161, 162, 0.1);
+        color: @color-gray-light;
+    }
+
+    .section {
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        .section-header {
+            .section-title {
+                font-size: 3.6rem;
+                font-weight: @font-weight__extrabold;
+                letter-spacing: -0.03em;
+                line-height: 4.6rem;
+                text-transform: uppercase;
+                margin: 0;
+            }
+        }
+
+        .section-body {
+            font-size: 1.6rem;
+            letter-spacing: -0.01em;
+            line-height: 2.6rem;
+            font-weight: @font-weight__heavier;
+        }
+
+        &.section-row {
+            .section-header {
+                .section-title {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+        &.section-no-padding-top {
+            padding-top: 0;
+        }
+
+        &.section-page {
+            .section-body {
+                h2.section-title {
+                    font-weight: @font-weight__bold;
+                }
+
+                h3 {
+                    font-size: 1.8rem;
+                }
+
+                p:not(:last-child) {
+                    margin-bottom: 1.5rem;
+                }
+            }
+        }
+
+        &.section-what-and-how {
+            .section-header {
+                background: linear-gradient(270deg, rgba(0,109,158,1) 0%, rgba(0,85,123,1) 100%);
+                padding-top: 30px;
+                padding-bottom: 30px;
+
+                .section-title {
+                    color: @color-white;
+                    white-space: nowrap;
+                    margin: 0;
+                }
+            }
+
+            .section-body {
+                display: flex;
+                flex-direction: column-reverse;
+
+                .body-text {
+                    font-size: 1.6rem;
+                    color: @color-white;
+                    letter-spacing: -0.01em;
+                    line-height: 2.6rem;
+                    font-weight: @font-weight__heavier;
+                }
+
+                .body-image {
+                    text-align: right;
+                    margin-top: -90px;
+                    margin-bottom: 10px;
+
+                    img {
+                        max-width: 303px;
+                    }
+                }
+            }
+
+
+            .button-arrow-orange {
+                font-weight: @font-weight__extrabold;
+                margin-top: 40px;
+                padding-right: 120px;
+                position: relative;
+            }
+        }
+
+        &.section-clinical-study {
+            background-image: url("../images/home-clinical-study-mobile.webp");
+            background-size: cover;
+            padding-top: 30px;
+            padding-bottom: 30px;
+
+            .section-header {
+                max-width: 574px;
+
+                .section-title {
+                    color: @color-blue-light;
+                    letter-spacing: -0.03em;
+                    text-transform: uppercase;
+                    margin: 0 0 25px 0;
+                }
+
+                .section-description {
+                    font-weight: @font-weight__semibold;
+                    font-size: 1.5rem;
+                    letter-spacing: -0.02em;
+                    line-height: 2.4rem;
+                    color: @color-gray-darker;
+                    margin-bottom: 35px;
+                }
+            }
+
+            .section-body {
+                .reports {
+                    .report {
+                        background-color: @color-white;
+                        padding: 20px 30px 40px 30px;
+                        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+                        width: auto !important;
+                        display: flex !important;
+                        flex-direction: column;
+                        min-height: 295px;
+                        margin-bottom: 10px;
+
+                        .report-title {
+                            margin: 0;
+                            font-size: 12rem;
+                            font-weight: @font-weight__extrabold;
+                            letter-spacing: -0.01em;
+                            color: @color-dark-orange;
+                            position: relative;
+
+                            .percent {
+                                font-size: 7.5rem;
+                                position: absolute;
+                                top: 20px;
+                            }
+                        }
+
+                        .report-body {
+                            font-weight: @font-weight__heavier;
+                            font-size: 2rem;
+                            letter-spacing: -0.01em;
+                            line-height: 3rem;
+                            color: @color-gray-light;
+                            max-width: 345px;
+                        }
+
+                        .report-footer {
+                            margin-top: auto;
+                        }
+                    }
+
+                    .arrow {
+                        background: @color-gray-lighter !important;
+                        padding: 5px 8px;
+
+                        &-left {
+                            left: -15px;
+                        }
+
+                        &-right {
+                            right: -15px;
+                        }
+                    }
+
+                    .long-arrow-left,
+                    .long-arrow-right {
+                        display: block;
+                        width: 6px;
+                        height: 6px;
+                        border-top: 2px solid @color-white;
+                        border-left: 2px solid @color-white;
+                        transition: none;
+
+                        &:after {
+                            content: "";
+                            display: block;
+                            width: 2px;
+                            height: 13px;
+                            background-color: @color-white;
+                            transform: rotate(-45deg) translate(4px, 0px);
+                            left: 0;
+                            top: 0;
+                        }
+                    }
+
+                    .long-arrow-left {
+                        transform: rotate(-45deg);
+                        margin: 7px auto 5px 1px;
+                        border-bottom: 0;
+                        border-right: 0;
+                    }
+
+                    .long-arrow-right {
+                        transform: rotate(135deg);
+                        margin: 7px 1px 5px auto;
+                    }
+                }
+            }
+        }
+
+        &.section-pain-survey {
+            .section-header {
+                .section-title {
+                    margin-bottom: 30px;
+                }
+            }
+
+            .section-body {
+                background-image: url("../images/home-pain-survey-mobile.webp");
+                background-repeat: no-repeat;
+                background-size: cover;
+                padding: 30px 20px;
+                color: @color-white;
+
+                .body-content {
+                    .content-title {
+                        font-weight: @font-weight__heavier;
+                        font-size: 2rem;
+                        font-style: normal;
+                        letter-spacing: -0.01em;
+                        line-height: 3rem;
+                        margin: 0 0 10px 0;
+                        max-width: 1330px;
+                    }
+
+                    .content-body {
+                        margin-bottom: 0;
+                        font-size: 1.6rem;
+                        line-height: 2.6rem;
+                    }
+                }
+
+                .button-arrow-orange {
+                    font-weight: @font-weight__extrabold;
+                    margin-top: 40px;
+                    padding-right: 120px;
+                    position: relative;
+                }
+            }
+        }
+
+        &.section-pemf-explained {
+            padding-top: 0;
+
+            .pemf-explained-image-mobile {
+                min-height: 261px;
+                background-image: url("../images/how-it-works-pemf-explained.webp");
+                background-size: cover;
+                background-repeat: no-repeat;
+                margin-bottom: 30px;
+            }
+
+            .section-header {
+                .section-title {
+                    margin-bottom: 25px;
+                }
+            }
+
+            .section-body {
+                background: @color-blue-lighter;
+                padding: 25px;
+                color: @color-white;
+                font-weight: @font-weight__heavier;
+                font-size: 1.6rem;
+                letter-spacing: -0.01em;
+                line-height: 2.6rem;
+
+                .content-body {
+                    margin-bottom: 0;
+                    display: none;
+                }
+            }
+        }
+
+        &.section-ipulser-system {
+            background-image: url("../images/how-it-works-ipluser-system-mobile.webp");
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding-top: 300px;
+
+            .section-body {
+                background: @color-white;
+                padding: 20px;
+
+                .body-image {
+                    max-width: 157px;
+                    margin: -280px auto 20px auto;
+
+                    img {
+                        border-radius: 15px;
+                        box-shadow: 0 5px 6px rgba(0, 0, 0, 0.22);
+                    }
+                }
+
+                .body-content {
+                    .content-title {
+                        font-size: 3.6rem;
+                        letter-spacing: -0.02em;
+                        line-height: 4.6rem;
+                        color: @color-dark-orange;
+                        font-weight: @font-weight__extrabold;
+                        margin-bottom: 20px;
+                        max-width: 200px;
+                    }
+
+                    .content-body {
+                        font-size: 1.4rem;
+                        letter-spacing: -0.01em;
+                        line-height: 2.4rem;
+                        color: @color-gray-light;
+                        font-weight: @font-weight__heavier;
+                    }
+                }
+            }
+        }
+
+        &.section-can-ipulser-help-you {
+            padding-top: 0;
+
+            .section-body {
+                .body-image {
+                    margin-left: -20px;
+                    margin-right: -20px;
+                }
+
+                .body-content {
+                    position: relative;
+
+                    .content-title {
+                        background-color: @color-dark-orange;
+                        color: @color-white;
+                        text-transform: uppercase;
+                        padding: 20px;
+                        margin-top: -60px;
+
+                        h3 {
+                            font-size: 3rem;
+                            font-style: normal;
+                            margin: 0;
+
+                            strong {
+                                font-weight: @font-weight__extrabold;
+                            }
+                        }
+                    }
+
+                    .content-body {
+                        margin-top: 20px;
+                        margin-bottom: 30px;
+                        font-size: 1.6rem;
+                        letter-spacing: -0.01em;
+                        line-height: 2.6rem;
+
+                        p:not(:last-child) {
+                            margin-top: 20px;
+                        }
+                    }
+
+                    .button-arrow-orange {
+                        position: relative;
+                        font-weight: @font-weight__extrabold;
+                        padding-right: 120px;
+
+                        &:hover {
+                            border: 1px solid @color-darker-orange;
+                        }
+                    }
+                }
+            }
+
+            .block.newsletter {
+                .field {
+                    .control:before {
+                        display: none;
+                    }
+
+                    &.newsletter {
+                        max-width: ~'calc(100% - 145px)';
+                        width: 100%;
+                        float: unset;
+                        margin-bottom: 10px;
+                    }
+                }
+
+                .actions {
+                    float: unset;
+                }
+
+                .form.subscribe {
+                    display: flex;
+                    flex-wrap: wrap;
+                    padding-top: 15px;
+
+                }
+
+                input {
+                    background: @color-white-light;
+                    border: none;
+                    font-size: 1.6rem;
+                    letter-spacing: -0.01em;
+                    color: #35373b;
+                    padding: 25px 20px;
+
+                    &:focus {
+                        outline: none;
+                        box-shadow: none;
+                    }
+                }
+
+                .action.subscribe {
+                    border-radius: unset;
+                    background: @color-blue-lighter;
+                    color: @color-white;
+                    font-weight: @font-weight__extrabold;
+                    border: 1px solid @color-blue-lighter;
+                    text-transform: uppercase;
+                    font-size: 1.6rem;
+                    padding: 16px 23px;
+                }
+            }
+        }
+
+        &.section-video {
+            .section-header {
+                .section-title {
+                    font-size: 3.6rem;
+                    font-weight: @font-weight__heavier;
+                    letter-spacing: -0.01em;
+                    line-height: 4.6rem;
+                    margin-bottom: 20px;
+                    text-transform: unset;
+                }
+            }
+
+            .section-body {
+                .body-description {
+                    margin-bottom: 15px;
+
+                    .title {
+                        font-size: 4rem;
+                        line-height: 5rem;
+                        font-weight: @font-weight__extrabold;
+                        font-style: unset;
+                        margin-bottom: 20px;
+
+                        &.text-orange {
+                            color: @color-dark-orange;
+                            font-weight: @font-weight__heavier;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.section-about {
+            .section-header {
+                margin-bottom: 30px;
+
+                .section-title {
+                    text-transform: unset;
+
+                    &.title-heavier {
+                        font-weight: @font-weight__heavier;
+                    }
+                }
+
+                .section-description {
+                    font-size: 2.6rem;
+                    line-height: 3rem;
+                    font-weight: @font-weight__heavier;
+                    letter-spacing: -0.01em;
+                }
+            }
+
+            .section-body {
+                .body-image {
+                    margin-bottom: 25px;
+                }
+
+                .body-content {
+                    font-size: 1.8rem;
+                    letter-spacing: -0.01em;
+                    line-height: 3rem;
+
+                    .body-title {
+                        font-size: 2rem;
+                        letter-spacing: -0.01em;
+                        line-height: 3.2rem;
+
+                        .title-heavier {
+                            font-weight: @font-weight__heavier;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .full-width {
+        margin-left: calc(~'50% - 50vw');
+        margin-right: calc(~'50% - 50vw');
+    }
+}
+
+
+
+
+//
+//  MOBILE
+//  _____________________________________________
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__xs) {
+    .section {
+        &.section-what-and-how {
+            .section-body {
+                div.body-image {
+                    img {
+                        max-width: 203px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__s) {}
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+    .ipulser {
+        .home-testimonials {
+            rs-module-wrap {
+                &#rev_slider_15_1_wrapper,
+                &#rev_slider_14_1_wrapper {
+                    .uranus.tparrows {
+                        &.tp-rightarrow {
+                            transform: translate(-35px, -15px) !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__l) {}
+
+
+
+
+//
+//  DESKTOP
+//  _____________________________________________
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__s) {}
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+    .section {
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+        .section-header {
+            .section-title {
+                font-size: 6.8rem;
+                line-height: 7rem;
+                letter-spacing: -0.03em;
+            }
+        }
+
+        .section-body {
+            font-size: 1.8rem;
+        }
+
+        &.section-page {
+            .section-body {
+                h3 {
+                    font-size: 2.2rem;
+                    margin-top: 2rem;
+                    margin-bottom: 1.5rem;
+                }
+            }
+        }
+
+        &.section-clinical-study {
+            background-image: url("../images/home-clinical-study.webp");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 50% 40%;
+            padding-top: 50px;
+            padding-bottom: 50px;
+
+            .section-body {
+                .reports {
+                    display: grid;
+                    grid-template-columns: 32.33% 32.33% 32.33%;
+                    grid-gap: 10px;
+
+                    .report {
+                        min-height: 395px;
+
+                        .report-title {
+                            font-size: 10rem;
+                            margin-bottom: 30px;
+
+                            .percent {
+                                top: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &.section-pain-survey {
+            .section-header {
+                .section-title {
+                    margin-bottom: 45px;
+                }
+            }
+
+            .section-body {
+                background-image: url("../images/home-pain-survey.webp");
+            }
+        }
+
+        &.section-pemf-explained {
+            .section-body {
+                font-size: 1.8rem;
+                line-height: 2.6rem;
+            }
+        }
+
+        &.section-ipulser-system {
+            background-image: url("../images/how-it-works-ipulser-system.webp");
+            padding-top: 100px;
+            padding-bottom: 100px;
+
+            .ipulser-system-wrapper {
+                position: relative;
+                background: transparent url("../images/background-white-75.webp") repeat-y left center;
+                background-size: 75% auto;
+                padding: 35px 0;
+            }
+
+            .section-body {
+                background: transparent;
+                padding: 0;
+                display: flex;
+                align-items: center;
+
+                .body-image {
+                    max-width: 190px;
+                    position: absolute;
+                    margin: auto;
+
+                    img {
+                        border-radius: 20px;
+                    }
+                }
+
+                .body-content {
+                    margin-left: 220px;
+                    max-width: 45%;
+                }
+            }
+        }
+
+        &.section-video {
+            .section-header {
+                .section-title {
+                    font-size: 4rem;
+                    line-height: 5rem;
+                    margin-bottom: 40px;
+                }
+            }
+
+            .section-body {
+                display: flex;
+
+                .body-description {
+                    width: 40%;
+                    display: flex;
+                    align-items: center;
+                    font-size: 1.8rem;
+                    margin-right: 20px;
+                    margin-bottom: 0;
+
+                    &.flex-column {
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: unset;
+                    }
+
+                    .title {
+                        font-size: 5.8rem;
+                        line-height: 6.8rem;
+                        margin-bottom: 25px;
+                    }
+                }
+
+                .body-video {
+                    width: calc(~'60% - 20px');
+                }
+            }
+        }
+
+        &.section-about {
+            .section-header {
+                .section-title {
+                    font-size: 4rem;
+                    line-height: 5rem;
+                }
+            }
+
+            .section-body {
+                .body-image {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: flex-end;
+
+                    img {
+                        margin-bottom: 15px;
+
+                        &:nth-child(2n+1) {
+                            margin-right: 15px;
+                        }
+                    }
+                }
+
+                .body-content {
+                    font-size: 2rem;
+                    line-height: 3.2rem;
+
+                    .body-title {
+                        font-size: 2.4rem;
+                        line-height: 3.6rem;
+                    }
+
+                    p {
+                        margin-bottom: 2rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .ipulser {
+        .home-testimonials {
+            rs-module-wrap {
+                &#rev_slider_15_1_wrapper,
+                &#rev_slider_14_1_wrapper {
+                    .uranus.tparrows {
+                        &.tp-rightarrow {
+                            transform: translate(-45px, -15px) !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .section {
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+        &.section-clinical-study {
+            padding-top: 50px;
+            padding-bottom: 50px;
+
+            .section-body {
+                .reports {
+                    display: grid;
+                    grid-template-columns: 32.33% 32.33% 32.33%;
+                    grid-gap: 10px;
+
+                    .report {
+                        min-height: 395px;
+
+                        .report-title {
+                            font-size: 10rem;
+                            margin-bottom: 30px;
+
+                            .percent {
+                                top: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 778px) {
+    .section {
+        &.section-pemf-explained {
+            padding-top: 50px;
+
+            .pemf-explained-image-mobile {
+                display: none;
+            }
+
+            .section-header {
+                .section-title {
+                    margin-bottom: 30px;
+                }
+            }
+
+            .section-body {
+                padding: 50px 30px;
+                display: flex;
+
+                .body-content {
+                    display: flex;
+
+                    .content-body {
+                        display: block;
+                        max-width: 50%;
+                        padding-right: 30px;
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: @screen__m) and (max-width: (@screen__l - 1)) {}
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__l) {
+    .section {
+        padding-top: 90px;
+        padding-bottom: 90px;
+
+        .section-header {
+            .section-title {
+                font-weight: @font-weight__extrabold;
+            }
+        }
+
+        .section-body {
+            font-size: 2rem;
+            line-height: 3rem;
+        }
+
+        &.section-page {
+            .section-body {
+                h3 {
+                    font-size: 2.6rem;
+                }
+            }
+        }
+
+        &.section-what-and-how {
+            .container-inner {
+                background: linear-gradient(270deg, rgba(0,109,158,1) 0%, rgba(0,85,123,1) 100%);
+                padding-top: 60px;
+                padding-bottom: 60px;
+            }
+
+            .container-custom {
+                display: flex;
+                align-items: center;
+                max-width: @layout__max-width-l;
+                margin-right: auto;
+                margin-left: auto;
+            }
+
+            .section-header {
+                background: transparent;
+
+                .section-title {
+                    font-size: 6.8rem;
+                    letter-spacing: -0.03em;
+                    line-height: 7rem;
+                    font-weight: @font-weight__extrabold;
+                }
+            }
+
+            .section-body {
+                flex-direction: row;
+                align-items: center;
+
+                .body-text {
+                    font-size: 1.8rem;
+                }
+
+                .body-image {
+                    margin-bottom: 0;
+
+                    img {
+                        max-width: 350px;
+                    }
+                }
+            }
+        }
+
+        &.section-clinical-study {
+            padding-top: 100px;
+            padding-bottom: 100px;
+
+            .section-body {
+                .reports {
+                    grid-template-columns: 30.33% 30.33% 30.33%;
+
+                    .report {
+                        min-height: 400px;
+
+                        .report-title {
+                            font-size: 14rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.section-pemf-explained {
+            .section-header {
+                .section-title {
+                    margin-bottom: 50px;
+                }
+            }
+
+            .section-body {
+                position: relative;
+
+                div.body-content {
+                    align-items: center;
+
+                    .content-body {
+                        max-width: 480px;
+                    }
+
+                    .content-image {
+                        position: absolute;
+                        max-width: 450px;
+                        right: calc(~'(100vw  - @{layout__max-width-l} + 80px)/2');
+                    }
+                }
+            }
+        }
+
+        &.section-ipulser-system {
+            padding-top: 150px;
+            padding-bottom: 150px;
+
+            .section-body {
+                .body-image {
+                    max-width: 250px;
+
+                    img {
+                        border-radius: 22px;
+                    }
+                }
+
+                .body-content {
+                    margin-left: 300px;
+
+                    .content-title {
+                        font-size: 6.8rem;
+                        line-height: 7rem;
+                        max-width: 400px;
+                    }
+
+                    .content-body {
+                        font-size: 1.8rem;
+                        line-height: 2.8rem;
+                    }
+                }
+            }
+        }
+
+        &.section-can-ipulser-help-you {
+            padding-top: 75px;
+
+            .section-body {
+                display: flex;
+                align-items: center;
+
+                .body-image {
+                    margin-left: 0;
+                    margin-right: 0;
+
+                    img {
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                        object-position: 100% 50%;
+                        min-height: 550px;
+                    }
+                }
+
+                .body-content {
+                    .content-title {
+                        margin-top: 0;
+                        padding-left: 50px;
+
+                        h3 {
+                            font-size: 6rem;
+                            line-height: 7rem;
+                        }
+                    }
+
+                    .content-body {
+                        font-size: 1.8rem;
+                        line-height: 2.8rem;
+                        margin-top: 30px;
+                        margin-bottom: 40px;
+                        padding-left: 50px;
+                    }
+
+                    .button-arrow-orange {
+                        margin-left: 50px;
+                        font-size: 1.8rem;
+                        padding: 20px 150px 20px 20px;
+                    }
+                }
+            }
+
+            .block.newsletter {
+                margin-left: 50px;
+                max-width: ~'calc(100% - 145px)';
+
+                .form.subscribe {
+                    padding-top: 20px;
+                }
+            }
+        }
+
+        &.section-video {
+            .section-header {
+                .section-title {
+                    font-size: 4.6rem;
+                    line-height: 5.6rem;
+                }
+            }
+
+            .section-body {
+                .body-description {
+                    width: 30%;
+                    font-size: 2rem;
+                    line-height: 3rem;
+                    margin-right: 40px;
+                }
+
+                .body-video {
+                    width: calc(~'70% - 40px');
+                }
+            }
+        }
+    }
+
+    .ipulser {
+        .home-testimonials {
+            rs-module-wrap {
+              &#rev_slider_15_1_wrapper,
+              &#rev_slider_14_1_wrapper {
+                  .uranus.tparrows {
+                      &:before {
+                          font-size: 7rem !important;
+                      }
+                  }
+              }
+            }
+        }
+    }
+}
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__xl) {
+    .section {
+        &.section-what-and-how {
+            .container-custom {
+                max-width: @layout__max-width;
+            }
+
+            .section-header {
+                .section-title {
+                    min-width: 397px;
+                }
+            }
+
+            .section-body {
+                flex-direction: row;
+
+                .body-text {
+                    font-size: 2rem;
+                    line-height: 3rem;
+                }
+
+                .body-image {
+                    img {
+                        max-width: 500px;
+                    }
+                }
+            }
+
+            .button-arrow-orange {
+                margin-top: 0;
+            }
+        }
+
+        &.section-pain-survey {
+            .section-body {
+                padding: 100px 30px;
+
+                .body-content {
+                    .content-title {
+                        font-size: 5.2rem;
+                        line-height: 6.2rem;
+                        margin: 0 0 15px 0;
+                    }
+
+                    .content-body {
+                        font-size: 3rem;
+                        line-height: 3rem;
+                    }
+                }
+            }
+        }
+
+        &.section-pemf-explained {
+            &.background-white-dark {
+                padding-top: 120px;
+                padding-bottom: 150px;
+            }
+
+            .section-header {
+                h2.section-title {
+                    margin-bottom: 90px;
+                }
+            }
+
+            div.section-body {
+                padding: 100px 50px;
+                font-size: 2.4rem;
+                line-height: 3.6rem;
+
+                div.body-content {
+                    .content-body {
+                        max-width: 671px;
+                    }
+
+                    .content-image {
+                        max-width: 729px;
+                        right: calc(~'(100vw  - @{layout__max-width} + 80px)/2');
+                    }
+                }
+            }
+        }
+
+        &.section-ipulser-system {
+            padding-top: 225px;
+            padding-bottom: 225px;
+
+            .ipulser-system-wrapper {
+                padding-top: 50px;
+                padding-bottom: 50px;
+            }
+
+            .section-body {
+                .body-image {
+                    max-width: 371px;
+
+                    img {
+                        border-radius: 35px;
+                    }
+                }
+
+                .body-content {
+                    margin-left: 420px;
+
+                    .content-title {
+                        margin-bottom: 50px;
+                    }
+                }
+            }
+        }
+
+        &.section-can-ipulser-help-you {
+            .section-body {
+                .body-image {
+                    img {
+                        min-height: 737px;
+                    }
+                }
+
+                .body-content {
+                    .content-title {
+                        padding-left: 100px;
+                    }
+
+                    .content-body {
+                        padding-left: 100px;
+                    }
+
+                    .button-arrow-orange {
+                        margin-left: 100px;
+                    }
+                }
+            }
+
+            .block.newsletter {
+                margin-left: 100px;
+            }
+        }
+    }
+}
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__xl) {}
